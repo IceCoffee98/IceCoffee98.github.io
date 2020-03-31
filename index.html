@@ -152,6 +152,488 @@
           <div id="js-content" class="content-ll">
             
   
+    <article id="post-Array" class="article article-type-post  article-index" itemscope itemprop="blogPost">
+  <div class="article-inner">
+    
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a class="article-title" href="/2020/03/31/Array/">Array</a>
+    </h1>
+  
+
+        
+        <a href="/2020/03/31/Array/" class="archive-article-date">
+  	<time datetime="2020-03-31T03:02:41.867Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2020-03-31</time>
+</a>
+        
+      </header>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <h2 id="Variables"><a href="#Variables" class="headerlink" title="Variables"></a>Variables</h2><h3 id="Basic-variables"><a href="#Basic-variables" class="headerlink" title="Basic variables"></a>Basic variables</h3><table>
+<thead>
+<tr>
+<th>Types</th>
+<th>Size /Byte(s)</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>byte</td>
+<td>1</td>
+</tr>
+<tr>
+<td>short</td>
+<td>2</td>
+</tr>
+<tr>
+<td>int</td>
+<td>4</td>
+</tr>
+<tr>
+<td>long</td>
+<td>8</td>
+</tr>
+<tr>
+<td>float</td>
+<td>7</td>
+</tr>
+<tr>
+<td>double</td>
+<td>8</td>
+</tr>
+<tr>
+<td>char</td>
+<td>2</td>
+</tr>
+<tr>
+<td>boolean</td>
+<td>1</td>
+</tr>
+</tbody></table>
+<h3 id="Reference-variables"><a href="#Reference-variables" class="headerlink" title="Reference variables"></a>Reference variables</h3><p>All the reference variables can be assigned “null”, representing there’s nothing in it.</p>
+<h2 id="Array"><a href="#Array" class="headerlink" title="Array"></a>Array</h2><h3 id="Initialise"><a href="#Initialise" class="headerlink" title="Initialise"></a>Initialise</h3><h4 id="1-Dynamic-initialization-specify-length"><a href="#1-Dynamic-initialization-specify-length" class="headerlink" title="1.Dynamic initialization(specify length)"></a>1.Dynamic initialization(specify length)</h4><ul>
+<li>basic format</li>
+</ul>
+<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">datatype[] name = <span class="keyword">new</span> datatype[length]</span><br></pre></td></tr></table></figure>
+
+<ul>
+<li>eg:</li>
+</ul>
+<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">int</span>[] arrayA = <span class="keyword">new</span> <span class="keyword">int</span>[<span class="number">300</span>];</span><br><span class="line">String[] arrayC = <span class="keyword">new</span> String[<span class="number">5</span>];</span><br></pre></td></tr></table></figure>
+
+<h4 id="2-Static-initialization-specify-value"><a href="#2-Static-initialization-specify-value" class="headerlink" title="2.Static initialization(specify value)"></a>2.Static initialization(specify value)</h4><ul>
+<li>basic format</li>
+</ul>
+<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">// elements can also be variables, not only parameters</span></span><br><span class="line">datatype[] name = <span class="keyword">new</span> datatype[]&#123;element1, element1, .....&#125;</span><br><span class="line">datatype[] name = &#123;element1, element1, .....&#125; <span class="comment">//omit format</span></span><br></pre></td></tr></table></figure>
+
+<ul>
+<li>eg</li>
+</ul>
+<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">int</span>[] arrayA = <span class="keyword">new</span> <span class="keyword">int</span>[]&#123;<span class="number">5</span>, <span class="number">15</span>, <span class="number">20</span>&#125;;</span><br><span class="line"><span class="keyword">int</span>[] arrayB = <span class="comment">/* new int[] */</span> &#123;<span class="number">5</span>, <span class="number">15</span>, <span class="number">20</span>&#125;; <span class="comment">// "new int[]" have been omitted</span></span><br><span class="line">String[] arrayC = <span class="keyword">new</span> String[]&#123;<span class="string">"Hello"</span>, <span class="string">"World"</span>, <span class="string">"Java"</span>&#125;;</span><br></pre></td></tr></table></figure>
+
+<h4 id="3-Attention"><a href="#3-Attention" class="headerlink" title="3.Attention"></a>3.Attention</h4><ul>
+<li>Static initialization still has its length, which will be automatically calculated</li>
+<li>Static and Dynamic initialization can be divided into 2 parts</li>
+</ul>
+<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">// Static initialization</span></span><br><span class="line"><span class="keyword">int</span>[] arrayA;</span><br><span class="line">arrayA = <span class="keyword">new</span> <span class="keyword">int</span>[] &#123;<span class="number">5</span>, <span class="number">15</span>, <span class="number">20</span>&#125;;</span><br><span class="line"></span><br><span class="line"><span class="comment">// Dynamic initialization</span></span><br><span class="line"><span class="keyword">int</span>[] arrayB;</span><br><span class="line">arrayA = <span class="keyword">new</span> <span class="keyword">int</span>[<span class="number">5</span>];</span><br><span class="line"></span><br><span class="line"><span class="comment">// !!!!! The Following isn't supported by compliers</span></span><br><span class="line"><span class="keyword">int</span>[] arrayC;</span><br><span class="line">arrayC = &#123;<span class="number">5</span>, <span class="number">15</span>, <span class="number">20</span>&#125;;</span><br></pre></td></tr></table></figure>
+
+<ul>
+<li>==All arrays need to be initialized before using(new)==</li>
+</ul>
+<h3 id="Reference"><a href="#Reference" class="headerlink" title="Reference"></a>Reference</h3><figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">datatype[] arrayA = <span class="keyword">new</span> <span class="keyword">int</span>[<span class="number">3</span>];</span><br><span class="line">datatype[] arrayB = arrayA;</span><br></pre></td></tr></table></figure>
+
+<p><code>arrayA</code> will be refered by <code>arrayB</code>, both of them have the same starting address.</p>
+<h3 id="Null-Pointer-Exception-of-Array"><a href="#Null-Pointer-Exception-of-Array" class="headerlink" title="Null Pointer Exception of Array"></a>Null Pointer Exception of Array</h3><ul>
+<li>incorrect eg:</li>
+</ul>
+<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">int</span>[] array = <span class="keyword">null</span>;</span><br><span class="line">System.out.println(array[<span class="number">0</span>]);</span><br><span class="line"><span class="comment">// Exception in thread "main" xx.NullPointerException</span></span><br></pre></td></tr></table></figure>
+
+<ul>
+<li>correct eg:</li>
+</ul>
+<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">int</span>[] array = <span class="keyword">null</span>;</span><br><span class="line">array = <span class="keyword">new</span> <span class="keyword">int</span>[<span class="number">3</span>];</span><br><span class="line">System.out.println(array[<span class="number">0</span>]);</span><br></pre></td></tr></table></figure>
+
+<h3 id="Use-Arrays-as-Arguments-of-Method"><a href="#Use-Arrays-as-Arguments-of-Method" class="headerlink" title="Use Arrays as Arguments of Method"></a>Use Arrays as Arguments of Method</h3><ul>
+<li>the transmitted arguments are the starting address of the <code>array</code></li>
+</ul>
+<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br></pre></td><td class="code"><pre><span class="line"><span class="function"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">void</span> <span class="title">main</span><span class="params">(String[] args)</span> </span>&#123;</span><br><span class="line">    <span class="keyword">int</span>[] arrayA = <span class="keyword">new</span> <span class="keyword">int</span>[] &#123;<span class="number">10</span>, <span class="number">200</span>, <span class="number">30</span>&#125;;</span><br><span class="line">    printArray(arrayA);</span><br><span class="line">&#125;</span><br><span class="line"><span class="function"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">void</span> <span class="title">printArray</span><span class="params">(<span class="keyword">int</span>[] array)</span></span>&#123;</span><br><span class="line">    <span class="keyword">for</span> (<span class="keyword">int</span> i = <span class="number">0</span>; i &lt; array.length; i++) &#123;</span><br><span class="line">        System.out.print(array[i]+<span class="string">" "</span>);</span><br><span class="line">    &#125;</span><br><span class="line">    System.out.println();</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<h3 id="Use-Array-as-a-Return-of-a-Method"><a href="#Use-Array-as-a-Return-of-a-Method" class="headerlink" title="Use Array as a Return of a Method"></a>Use Array as a Return of a Method</h3><ul>
+<li>the returned <code>array</code> is also the starting address</li>
+</ul>
+<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">//return array</span></span><br><span class="line"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">int</span>[] returnArray(<span class="keyword">int</span> a[])&#123;</span><br><span class="line">  	...</span><br><span class="line"> 		<span class="keyword">int</span>[] array = &#123;...&#125;;</span><br><span class="line">    <span class="keyword">return</span> array;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+      
+
+      
+    </div>
+    <div class="article-info article-info-index">
+      
+      
+      
+
+      
+        <p class="article-more-link">
+          <a class="article-more-a" href="/2020/03/31/Array/">展开全文 >></a>
+        </p>
+      
+
+      
+      <div class="clearfix"></div>
+    </div>
+  </div>
+</article>
+
+<aside class="wrap-side-operation">
+    <div class="mod-side-operation">
+        
+        <div class="jump-container" id="js-jump-container" style="display:none;">
+            <a href="javascript:void(0)" class="mod-side-operation__jump-to-top">
+                <i class="icon-font icon-back"></i>
+            </a>
+            <div id="js-jump-plan-container" class="jump-plan-container" style="top: -11px;">
+                <i class="icon-font icon-plane jump-plane"></i>
+            </div>
+        </div>
+        
+        
+    </div>
+</aside>
+
+
+
+
+  
+    <article id="post-Method" class="article article-type-post  article-index" itemscope itemprop="blogPost">
+  <div class="article-inner">
+    
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a class="article-title" href="/2020/03/31/Method/">Method</a>
+    </h1>
+  
+
+        
+        <a href="/2020/03/31/Method/" class="archive-article-date">
+  	<time datetime="2020-03-31T03:01:57.814Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2020-03-31</time>
+</a>
+        
+      </header>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <h2 id="Method"><a href="#Method" class="headerlink" title="Method"></a>Method</h2><h4 id="Define-format"><a href="#Define-format" class="headerlink" title="Define format:"></a>Define format:</h4><figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="function"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">void</span> <span class="title">methodName</span><span class="params">()</span></span>&#123;</span><br><span class="line">    method body</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<h4 id="Call-format"><a href="#Call-format" class="headerlink" title="Call format:"></a>Call format:</h4><ul>
+<li>The sequency is unnecessary</li>
+<li>Nesting method is not allowed</li>
+<li>Method can’t implement itself: I you want it to implement, you need call the method</li>
+</ul>
+<h3 id="Method-Overloading"><a href="#Method-Overloading" class="headerlink" title="Method Overloading"></a>Method Overloading</h3><ul>
+<li>the same <code>method name</code> to be used with different <code>argument</code> types</li>
+<li>the sequence/type can be different.</li>
+<li>nothing to do with the name of parameters / type of return / public? / static</li>
+</ul>
+<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">public</span> <span class="class"><span class="keyword">class</span> <span class="title">MethodOverload</span></span>&#123;</span><br><span class="line">    <span class="function"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">void</span> <span class="title">main</span><span class="params">(String[] args)</span></span>&#123;</span><br><span class="line">      System.out.println(sum(<span class="number">10</span>,<span class="number">20</span>));</span><br><span class="line">      System.out.println(sum(<span class="number">10</span>,<span class="number">20</span>,<span class="number">30</span>));</span><br><span class="line">      System.out.println(sum(<span class="number">10</span>,<span class="number">20</span>,<span class="number">30</span>,<span class="number">40</span>));</span><br><span class="line">    &#125;</span><br><span class="line">  	<span class="function"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">int</span> <span class="title">sum</span><span class="params">(<span class="keyword">double</span> a,<span class="keyword">double</span> b)</span></span>&#123;</span><br><span class="line">      <span class="keyword">return</span> (<span class="keyword">int</span>)(a+b);</span><br><span class="line">    &#125;</span><br><span class="line">   	<span class="function"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">int</span> <span class="title">sum</span><span class="params">(<span class="keyword">int</span> a,<span class="keyword">double</span> b)</span></span>&#123;</span><br><span class="line">      <span class="keyword">return</span> (<span class="keyword">int</span>)(a+b);</span><br><span class="line">    &#125;</span><br><span class="line">    <span class="function"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">int</span> <span class="title">sum</span><span class="params">(<span class="keyword">double</span> a,<span class="keyword">int</span> b)</span></span>&#123;</span><br><span class="line">      <span class="keyword">return</span> (<span class="keyword">int</span>)(a+b);</span><br><span class="line">    &#125;</span><br><span class="line">  	<span class="function"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">int</span> <span class="title">sum</span><span class="params">(<span class="keyword">int</span> a,<span class="keyword">int</span> b,<span class="keyword">int</span> c)</span></span>&#123;</span><br><span class="line">      <span class="keyword">return</span> a+b+c;</span><br><span class="line">    &#125;</span><br><span class="line">  	<span class="function"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">int</span> <span class="title">sum</span><span class="params">(<span class="keyword">int</span> a,<span class="keyword">int</span> b,<span class="keyword">int</span> c,<span class="keyword">int</span> d)</span></span>&#123;</span><br><span class="line">      <span class="keyword">return</span> a+b+c+d;</span><br><span class="line">    &#125;</span><br><span class="line">  	<span class="comment">//the following methods are wrong</span></span><br><span class="line">  	<span class="function"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">int</span> <span class="title">sum</span><span class="params">(<span class="keyword">int</span> x,<span class="keyword">double</span> y)</span></span>&#123;</span><br><span class="line">      <span class="keyword">return</span> (<span class="keyword">int</span>)(x+y);</span><br><span class="line">    &#125;</span><br><span class="line">    <span class="function"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">double</span> <span class="title">sum</span><span class="params">(<span class="keyword">double</span> a,<span class="keyword">double</span> b)</span></span>&#123;</span><br><span class="line">      <span class="keyword">return</span> a+b+<span class="number">0.0</span>;</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<p>Actually, <code>System.out.println(&quot;Hello World&quot;);</code> is a kind of overload of various types.</p>
+
+      
+
+      
+    </div>
+    <div class="article-info article-info-index">
+      
+      
+      
+
+      
+        <p class="article-more-link">
+          <a class="article-more-a" href="/2020/03/31/Method/">展开全文 >></a>
+        </p>
+      
+
+      
+      <div class="clearfix"></div>
+    </div>
+  </div>
+</article>
+
+<aside class="wrap-side-operation">
+    <div class="mod-side-operation">
+        
+        <div class="jump-container" id="js-jump-container" style="display:none;">
+            <a href="javascript:void(0)" class="mod-side-operation__jump-to-top">
+                <i class="icon-font icon-back"></i>
+            </a>
+            <div id="js-jump-plan-container" class="jump-plan-container" style="top: -11px;">
+                <i class="icon-font icon-plane jump-plane"></i>
+            </div>
+        </div>
+        
+        
+    </div>
+</aside>
+
+
+
+
+  
+    <article id="post-Development Environment of Java" class="article article-type-post  article-index" itemscope itemprop="blogPost">
+  <div class="article-inner">
+    
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a class="article-title" href="/2020/03/31/Development%20Environment%20of%20Java/">Development Environment of Java</a>
+    </h1>
+  
+
+        
+        <a href="/2020/03/31/Development%20Environment%20of%20Java/" class="archive-article-date">
+  	<time datetime="2020-03-31T03:00:45.635Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2020-03-31</time>
+</a>
+        
+      </header>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <h2 id="Development-Environment-of-Java"><a href="#Development-Environment-of-Java" class="headerlink" title="Development Environment of Java"></a>Development Environment of Java</h2><hr>
+<h3 id="JVM-Java-Virtual-Machine"><a href="#JVM-Java-Virtual-Machine" class="headerlink" title="JVM - Java Virtual Machine"></a>JVM - Java Virtual Machine</h3><p>All of the code run in JVM(Like a translator)</p>
+<h4 id="Cross-platform"><a href="#Cross-platform" class="headerlink" title="Cross-platform"></a>Cross-platform</h4><ul>
+<li>All of the programs runs in JVM and all the JVMs run on the OS</li>
+<li>JVMs of different OS are different, JVM is not cross-platform</li>
+</ul>
+<h3 id="JRE-Java-Runtime-Environment"><a href="#JRE-Java-Runtime-Environment" class="headerlink" title="JRE(Java Runtime Environment)"></a>JRE(Java Runtime Environment)</h3><ul>
+<li>the environment Jave code runs on, which includes <code>JVM</code> and <code>Esential Class Lib</code> for running</li>
+</ul>
+<h3 id="JDK-Java-Development-Kit"><a href="#JDK-Java-Development-Kit" class="headerlink" title="JDK(Java Development Kit)"></a>JDK(Java Development Kit)</h3><ul>
+<li>including <code>JRE</code> &amp; tools developers need</li>
+</ul>
+<p>If you want to run a existing Java program, only <code>JRE</code> is needed</p>
+<p>If you want to develop a new Java program, you must install <code>JDK</code></p>
+<img src="https://github.com/IceCoffee98/Java_Basic_Course/blob/master/img/image-20200327203832387.png" alt="image-20200327203832387" style="zoom:50%;" />
+
+<hr>
+<h2 id="Optimization-of-Compliers"><a href="#Optimization-of-Compliers" class="headerlink" title="Optimization of Compliers"></a>Optimization of Compliers</h2><p>for byte/short/char these 3 kinds of types,:</p>
+<ul>
+<li>if the values on the right side doesn’t exceed the range of the left side, the complier - Javac - will automatically add (byte)(short)(short)</li>
+<li>if it dosen’t exceed, the complier will report “error”</li>
+<li>When assigning a value to a variable, Javac will directly use the result of the expression as its value if the right side is all parameters  </li>
+</ul>
+<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">short</span> a=<span class="number">5</span>;</span><br><span class="line"><span class="keyword">short</span> b=<span class="number">8</span>;</span><br><span class="line"><span class="keyword">short</span> result=<span class="number">5</span>+<span class="number">8</span>; <span class="comment">//right</span></span><br><span class="line"><span class="keyword">short</span> result=a+b; <span class="comment">//wrong</span></span><br></pre></td></tr></table></figure>
+
+<p>if there are variables on the right side, the optimization won’t work.</p>
+<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">short</span> result=<span class="number">5</span>+a+<span class="number">8</span>; <span class="comment">//wrong</span></span><br></pre></td></tr></table></figure>
+
+<hr>
+<h2 id="Structure-of-IDEA"><a href="#Structure-of-IDEA" class="headerlink" title="Structure of IDEA"></a>Structure of IDEA</h2><img src="https://github.com/IceCoffee98/Java_Basic_Course/blob/master/img/image-20200327220724529.png" style="zoom:30%;" align='left'/>
+
+<h3 id="PS"><a href="#PS" class="headerlink" title="PS:"></a>PS:</h3><ul>
+<li>the name of packages should be lower case</li>
+</ul>
+<h2 id="Common-Shortcut-of-IDEA"><a href="#Common-Shortcut-of-IDEA" class="headerlink" title="Common Shortcut of IDEA"></a>Common Shortcut of IDEA</h2><table>
+<thead>
+<tr>
+<th>Shortcut</th>
+<th align="left">Function</th>
+</tr>
+</thead>
+<tbody><tr>
+<td><code>Ctrl+x</code></td>
+<td align="left">Eliminate the line</td>
+</tr>
+<tr>
+<td><code>Opt+Enter</code></td>
+<td align="left">Importing jar package</td>
+</tr>
+<tr>
+<td><code>Ctrl+d</code></td>
+<td align="left">Duplicate the line</td>
+</tr>
+<tr>
+<td><code>Opt+cmd+L</code></td>
+<td align="left">Importing jar package</td>
+</tr>
+<tr>
+<td><code>Cmd+/</code></td>
+<td align="left">Annotation selected area</td>
+</tr>
+<tr>
+<td><code>Cmd+Shift+/</code></td>
+<td align="left">Annotation selected area</td>
+</tr>
+<tr>
+<td><code>Cmd+Shift+Arrow keys</code></td>
+<td align="left">Move the line</td>
+</tr>
+<tr>
+<td><code>&quot;num.fori&quot;</code></td>
+<td align="left">loop(i)</td>
+</tr>
+<tr>
+<td><code>&quot;array.fori&quot;</code></td>
+<td align="left">loop(array)</td>
+</tr>
+</tbody></table>
+<h2 id="Import-Models"><a href="#Import-Models" class="headerlink" title="Import Models"></a>Import Models</h2><blockquote>
+<p>File</p>
+<blockquote>
+<p>Project Structure</p>
+<blockquote>
+<p>Modules</p>
+</blockquote>
+</blockquote>
+</blockquote>
+
+      
+
+      
+    </div>
+    <div class="article-info article-info-index">
+      
+      
+      
+
+      
+        <p class="article-more-link">
+          <a class="article-more-a" href="/2020/03/31/Development%20Environment%20of%20Java/">展开全文 >></a>
+        </p>
+      
+
+      
+      <div class="clearfix"></div>
+    </div>
+  </div>
+</article>
+
+<aside class="wrap-side-operation">
+    <div class="mod-side-operation">
+        
+        <div class="jump-container" id="js-jump-container" style="display:none;">
+            <a href="javascript:void(0)" class="mod-side-operation__jump-to-top">
+                <i class="icon-font icon-back"></i>
+            </a>
+            <div id="js-jump-plan-container" class="jump-plan-container" style="top: -11px;">
+                <i class="icon-font icon-plane jump-plane"></i>
+            </div>
+        </div>
+        
+        
+    </div>
+</aside>
+
+
+
+
+  
+    <article id="post-Class &amp; Objects" class="article article-type-post  article-index" itemscope itemprop="blogPost">
+  <div class="article-inner">
+    
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a class="article-title" href="/2020/03/31/Class%20&%20Objects/">Class &amp; Objects</a>
+    </h1>
+  
+
+        
+        <a href="/2020/03/31/Class%20&%20Objects/" class="archive-article-date">
+  	<time datetime="2020-03-31T02:58:17.667Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2020-03-31</time>
+</a>
+        
+      </header>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <h2 id="Class-amp-Objects"><a href="#Class-amp-Objects" class="headerlink" title="Class &amp; Objects"></a>Class &amp; Objects</h2><h3 id="Class"><a href="#Class" class="headerlink" title="Class"></a>Class</h3><ul>
+<li>a set of related <code>attributes</code> &amp; <code>behavior</code></li>
+<li>like a template of a thing describeb by <code>attributes</code> &amp; <code>behavior</code></li>
+</ul>
+<h4 id="Attributes"><a href="#Attributes" class="headerlink" title="Attributes"></a>Attributes</h4><ul>
+<li>the statues of a thing</li>
+</ul>
+<h4 id="Behaviors"><a href="#Behaviors" class="headerlink" title="Behaviors"></a>Behaviors</h4><ul>
+<li>what this thing can do</li>
+</ul>
+<p>eg:</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">class: a cat</span><br><span class="line">attributes: name, weight, age, color</span><br><span class="line">behaviors: walk, run</span><br></pre></td></tr></table></figure>
+
+<img src="https://github.com/IceCoffee98/Java_Basic_Course/blob/master/img/image-20200328111204621.png" style="zoom:67%;" />
+
+<h3 id="Object"><a href="#Object" class="headerlink" title="Object"></a>Object</h3><p><code>Class</code> is the description of a type of thing, which is ==abstract==.</p>
+<p><code>Object</code> is an example of a type of thing, which is ==specific==.</p>
+<p><code>Class</code> is the templet of <code>Object</code>, <code>Object</code> is the entity of <code>Class</code></p>
+<h4 id="Attention"><a href="#Attention" class="headerlink" title="Attention"></a>Attention</h4><ul>
+<li>common method should include keyword: <code>static</code>, but in the method of a member, it is not allowed.</li>
+<li>member’s variables are defined outside of methods of the class </li>
+<li>different examples of the same class share the same starting address of behavior method</li>
+<li>the example of a class can be refered</li>
+<li>when an object is transmitted into a method, the actual transitted is the address of the object</li>
+<li>when the tpye of a variable is “boolean”, “Getter Function” should be written as “isXxx”.</li>
+<li>you can add Class with another Class in different package</li>
+<li>when a <strong>local variable</strong> and a <strong>member variable</strong> in the same Class have the same name in a method, the method will use the <strong>closet variable as priority</strong>. And you can use <strong><code>this.</code></strong> to represent member variables. <strong><code>this</code></strong> is called by the the particular object by Class.</li>
+</ul>
+<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br><span class="line">47</span><br><span class="line">48</span><br><span class="line">49</span><br><span class="line">50</span><br><span class="line">51</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">// Class Declaration  </span></span><br><span class="line"><span class="keyword">public</span> <span class="class"><span class="keyword">class</span> <span class="title">Dog</span> </span>&#123; </span><br><span class="line">    <span class="comment">// Instance Variables </span></span><br><span class="line">  	<span class="comment">// behaviors</span></span><br><span class="line">    String name; </span><br><span class="line">    String breed; </span><br><span class="line">    <span class="keyword">int</span> age; </span><br><span class="line">    String color; </span><br><span class="line">  </span><br><span class="line">    <span class="comment">// Constructor Declaration of Class </span></span><br><span class="line">    <span class="function"><span class="keyword">public</span> <span class="title">Dog</span><span class="params">(String name, String breed, <span class="keyword">int</span> age, String color)</span></span>&#123; </span><br><span class="line">        <span class="keyword">this</span>.name = name; </span><br><span class="line">        <span class="keyword">this</span>.breed = breed; </span><br><span class="line">        <span class="keyword">this</span>.age = age; </span><br><span class="line">        <span class="keyword">this</span>.color = color; </span><br><span class="line">    &#125; </span><br><span class="line">  	</span><br><span class="line">  	<span class="comment">// Attributes</span></span><br><span class="line">    <span class="comment">// method 1 </span></span><br><span class="line">    <span class="function"><span class="keyword">public</span> String <span class="title">getName</span><span class="params">()</span></span>&#123; </span><br><span class="line">        <span class="keyword">return</span> name; </span><br><span class="line">    &#125; </span><br><span class="line">  </span><br><span class="line">    <span class="comment">// method 2 </span></span><br><span class="line">    <span class="function"><span class="keyword">public</span> String <span class="title">getBreed</span><span class="params">()</span></span>&#123; </span><br><span class="line">        <span class="keyword">return</span> breed; </span><br><span class="line">    &#125; </span><br><span class="line">  </span><br><span class="line">    <span class="comment">// method 3 </span></span><br><span class="line">    <span class="function"><span class="keyword">public</span> <span class="keyword">int</span> <span class="title">getAge</span><span class="params">()</span></span>&#123; </span><br><span class="line">        <span class="keyword">return</span> age; </span><br><span class="line">    &#125; </span><br><span class="line">  </span><br><span class="line">    <span class="comment">// method 4 </span></span><br><span class="line">    <span class="function"><span class="keyword">public</span> String <span class="title">getColor</span><span class="params">()</span></span>&#123; </span><br><span class="line">        <span class="keyword">return</span> color; </span><br><span class="line">    &#125; </span><br><span class="line">  </span><br><span class="line">    <span class="meta">@Override</span></span><br><span class="line">    <span class="function"><span class="keyword">public</span> String <span class="title">toString</span><span class="params">()</span></span>&#123; </span><br><span class="line">        <span class="keyword">return</span>(<span class="string">"Hi my name is "</span>+ <span class="keyword">this</span>.getName()+ </span><br><span class="line">               <span class="string">".\nMy breed,age and color are "</span> + </span><br><span class="line">               <span class="keyword">this</span>.getBreed()+<span class="string">","</span> + <span class="keyword">this</span>.getAge()+ </span><br><span class="line">               <span class="string">","</span>+ <span class="keyword">this</span>.getColor()); </span><br><span class="line">    &#125; </span><br><span class="line">  </span><br><span class="line">    <span class="function"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">void</span> <span class="title">main</span><span class="params">(String[] args)</span></span>&#123; </span><br><span class="line">        Dog tuffy = <span class="keyword">new</span> Dog(<span class="string">"tuffy"</span>,<span class="string">"papillon"</span>, <span class="number">5</span>, <span class="string">"white"</span>); </span><br><span class="line">        System.out.println(tuffy.toString()); </span><br><span class="line">    &#125; </span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<h3 id="Construction-Method"><a href="#Construction-Method" class="headerlink" title="Construction Method"></a>Construction Method</h3><ul>
+<li>the name of a construction method should be completely the same as the Class, even the case.</li>
+<li>construction method don’t need <code>return</code> and <code>void</code></li>
+<li>if you don’t write a construction method manually, the complier will create one automatically. Once you write it, the complier won’t create another any more. But you can write more than one construction method with different argument list –  overload of construction.</li>
+</ul>
+<h3 id="A-Standard-Class-Consists-of-Following-4-Parts-Java-Bean"><a href="#A-Standard-Class-Consists-of-Following-4-Parts-Java-Bean" class="headerlink" title="A Standard Class Consists of Following 4 Parts: (Java Bean)"></a>A Standard Class Consists of Following 4 Parts: (Java Bean)</h3><ol>
+<li>all member variables are modified by <code>private</code></li>
+<li>all member variables need a pair of <code>Getter</code>&amp;<code>Setter</code></li>
+<li>a construction method without <code>arguments</code></li>
+<li>a construction method with full <code>arguments</code></li>
+</ol>
+
+      
+
+      
+    </div>
+    <div class="article-info article-info-index">
+      
+      
+      
+
+      
+        <p class="article-more-link">
+          <a class="article-more-a" href="/2020/03/31/Class%20&%20Objects/">展开全文 >></a>
+        </p>
+      
+
+      
+      <div class="clearfix"></div>
+    </div>
+  </div>
+</article>
+
+<aside class="wrap-side-operation">
+    <div class="mod-side-operation">
+        
+        <div class="jump-container" id="js-jump-container" style="display:none;">
+            <a href="javascript:void(0)" class="mod-side-operation__jump-to-top">
+                <i class="icon-font icon-back"></i>
+            </a>
+            <div id="js-jump-plan-container" class="jump-plan-container" style="top: -11px;">
+                <i class="icon-font icon-plane jump-plane"></i>
+            </div>
+        </div>
+        
+        
+    </div>
+</aside>
+
+
+
+
+  
     <article id="post-Java_course copy" class="article article-type-post  article-index" itemscope itemprop="blogPost">
   <div class="article-inner">
     
