@@ -254,10 +254,6 @@ output:<figure class="highlight plain"><table><tr><td class="gutter"><pre><span 
 </blockquote>
 
         
-<div class="page-reward">
-    <a id="rewardBtn" href="javascript:;" class="page-reward-btn waves-effect waves-circle waves-light">赏</a>
-</div>
-
 
 
         <div class="post-footer">
@@ -333,6 +329,15 @@ output:<figure class="highlight plain"><table><tr><td class="gutter"><pre><span 
     
 
 
+<section class="comments" id="comments">
+    <div id="disqus_thread"></div>
+    <script>
+    var disqus_shortname = 'true';
+    lazyScripts.push('//' + disqus_shortname + '.disqus.com/embed.js')
+    </script>
+    <noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript" target="_blank" rel="noopener">comments powered by Disqus.</a></noscript>
+</section>
+
 
 
 
@@ -376,22 +381,6 @@ output:<figure class="highlight plain"><table><tr><td class="gutter"><pre><span 
 
 
 </article>
-
-<div id="reward" class="page-modal reward-lay">
-    <a class="close" href="javascript:;"><i class="icon icon-close"></i></a>
-    <h3 class="reward-title">
-        <i class="icon icon-quote-left"></i>
-        
-        <i class="icon icon-quote-right"></i>
-    </h3>
-    <div class="reward-content">
-        
-        <div class="reward-code">
-            <img id="rewardCode" src="/false" alt="打赏二维码">
-        </div>
-        
-    </div>
-</div>
 
 
 
@@ -478,7 +467,7 @@ output:<figure class="highlight plain"><table><tr><td class="gutter"><pre><span 
 
     <script src="//cdn.bootcss.com/node-waves/0.7.4/waves.min.js"></script>
 <script>
-var BLOG = { ROOT: '/', SHARE: true, REWARD: true };
+var BLOG = { ROOT: '/', SHARE: true, REWARD: false };
 
 
 </script>
