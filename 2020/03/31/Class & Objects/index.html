@@ -1,0 +1,543 @@
+<!DOCTYPE html>
+<html>
+<head>
+    
+
+    
+
+    
+
+
+
+    <meta charset="utf-8">
+    
+    
+    
+    
+    <title>Class &amp; Objects | IceCoffee&#39;s Blog</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    
+    <meta name="theme-color" content="#3F51B5">
+    
+    
+    <meta name="keywords" content="">
+    <meta name="description" content="Class &amp; ObjectsClass a set of related attributes &amp; behavior like a template of a thing describeb by attributes &amp; behavior  Attributes the statues of a thing  Behaviors what this thing can">
+<meta property="og:type" content="article">
+<meta property="og:title" content="Class &amp; Objects">
+<meta property="og:url" content="http://yoursite.com/2020/03/31/Class%20&%20Objects/index.html">
+<meta property="og:site_name" content="IceCoffee&#39;s Blog">
+<meta property="og:description" content="Class &amp; ObjectsClass a set of related attributes &amp; behavior like a template of a thing describeb by attributes &amp; behavior  Attributes the statues of a thing  Behaviors what this thing can">
+<meta property="og:locale" content="en_US">
+<meta property="og:image" content="https://github.com/IceCoffee98/Java_Basic_Course/blob/master/img/image-20200328111204621.png">
+<meta property="article:published_time" content="2020-03-31T02:58:17.667Z">
+<meta property="article:modified_time" content="2020-03-31T03:03:41.303Z">
+<meta property="article:author" content="Ice Coffee">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:image" content="https://github.com/IceCoffee98/Java_Basic_Course/blob/master/img/image-20200328111204621.png">
+    
+    <link rel="shortcut icon" href="/favicon.ico">
+    <link rel="stylesheet" href="//unpkg.com/hexo-theme-material-indigo@latest/css/style.css">
+    <script>window.lazyScripts=[]</script>
+
+    <!-- custom head -->
+    
+
+<meta name="generator" content="Hexo 4.2.0"></head>
+
+<body>
+    <div id="loading" class="active"></div>
+
+    <aside id="menu" class="hide" >
+  <div class="inner flex-row-vertical">
+    <a href="javascript:;" class="header-icon waves-effect waves-circle waves-light" id="menu-off">
+        <i class="icon icon-lg icon-close"></i>
+    </a>
+    <div class="brand-wrap" style="background-image:url(/img/brand.jpg)">
+      <div class="brand">
+        <a href="/" class="avatar waves-effect waves-circle waves-light">
+          <img src="/img/ksq.png">
+        </a>
+        <hgroup class="introduce">
+          <h5 class="nickname">Ice Coffee</h5>
+          <a href="mailto:yixuanyu98@gmail.com" title="yixuanyu98@gmail.com" class="mail">yixuanyu98@gmail.com</a>
+        </hgroup>
+      </div>
+    </div>
+    <div class="scroll-wrap flex-col">
+      <ul class="nav">
+        
+            <li class="waves-block waves-effect">
+              <a href="/"  >
+                <i class="icon icon-lg icon-home"></i>
+                Home Page
+              </a>
+            </li>
+        
+            <li class="waves-block waves-effect">
+              <a href="/archives"  >
+                <i class="icon icon-lg icon-archives"></i>
+                Archives
+              </a>
+            </li>
+        
+            <li class="waves-block waves-effect">
+              <a href="/tags"  >
+                <i class="icon icon-lg icon-tags"></i>
+                Tags
+              </a>
+            </li>
+        
+            <li class="waves-block waves-effect">
+              <a href="/categories"  >
+                <i class="icon icon-lg icon-th-list"></i>
+                Categories
+              </a>
+            </li>
+        
+            <li class="waves-block waves-effect">
+              <a href="https://github.com/IceCoffee98" target="_blank" >
+                <i class="icon icon-lg icon-github"></i>
+                Github
+              </a>
+            </li>
+        
+            <li class="waves-block waves-effect">
+              <a href="https://weibo.com/u/2327972960?from=feed&loc=at&nick=-莫小言_" target="_blank" >
+                <i class="icon icon-lg icon-weibo"></i>
+                Weibo
+              </a>
+            </li>
+        
+      </ul>
+    </div>
+  </div>
+</aside>
+
+    <main id="main">
+        <header class="top-header" id="header">
+    <div class="flex-row">
+        <a href="javascript:;" class="header-icon waves-effect waves-circle waves-light on" id="menu-toggle">
+          <i class="icon icon-lg icon-navicon"></i>
+        </a>
+        <div class="flex-col header-title ellipsis">Class &amp; Objects</div>
+        
+        <div class="search-wrap" id="search-wrap">
+            <a href="javascript:;" class="header-icon waves-effect waves-circle waves-light" id="back">
+                <i class="icon icon-lg icon-chevron-left"></i>
+            </a>
+            <input type="text" id="key" class="search-input" autocomplete="off" placeholder="Search">
+            <a href="javascript:;" class="header-icon waves-effect waves-circle waves-light" id="search">
+                <i class="icon icon-lg icon-search"></i>
+            </a>
+        </div>
+        
+        
+        <a href="javascript:;" class="header-icon waves-effect waves-circle waves-light" id="menuShare">
+            <i class="icon icon-lg icon-share-alt"></i>
+        </a>
+        
+    </div>
+</header>
+<header class="content-header post-header">
+
+    <div class="container fade-scale">
+        <h1 class="title">Class &amp; Objects</h1>
+        <h5 class="subtitle">
+            
+                <time datetime="2020-03-31T02:58:17.667Z" itemprop="datePublished" class="page-time">
+  2020-03-31
+</time>
+
+
+            
+        </h5>
+    </div>
+
+    
+
+
+</header>
+
+
+<div class="container body-wrap">
+    
+    <aside class="post-widget">
+        <nav class="post-toc-wrap post-toc-shrink" id="post-toc">
+            <h4>TOC</h4>
+            <ol class="post-toc"><li class="post-toc-item post-toc-level-2"><a class="post-toc-link" href="#Class-amp-Objects"><span class="post-toc-number">1.</span> <span class="post-toc-text">Class &amp; Objects</span></a><ol class="post-toc-child"><li class="post-toc-item post-toc-level-3"><a class="post-toc-link" href="#Class"><span class="post-toc-number">1.1.</span> <span class="post-toc-text">Class</span></a><ol class="post-toc-child"><li class="post-toc-item post-toc-level-4"><a class="post-toc-link" href="#Attributes"><span class="post-toc-number">1.1.1.</span> <span class="post-toc-text">Attributes</span></a></li><li class="post-toc-item post-toc-level-4"><a class="post-toc-link" href="#Behaviors"><span class="post-toc-number">1.1.2.</span> <span class="post-toc-text">Behaviors</span></a></li></ol></li><li class="post-toc-item post-toc-level-3"><a class="post-toc-link" href="#Object"><span class="post-toc-number">1.2.</span> <span class="post-toc-text">Object</span></a><ol class="post-toc-child"><li class="post-toc-item post-toc-level-4"><a class="post-toc-link" href="#Attention"><span class="post-toc-number">1.2.1.</span> <span class="post-toc-text">Attention</span></a></li></ol></li><li class="post-toc-item post-toc-level-3"><a class="post-toc-link" href="#Construction-Method"><span class="post-toc-number">1.3.</span> <span class="post-toc-text">Construction Method</span></a></li><li class="post-toc-item post-toc-level-3"><a class="post-toc-link" href="#A-Standard-Class-Consists-of-Following-4-Parts-Java-Bean"><span class="post-toc-number">1.4.</span> <span class="post-toc-text">A Standard Class Consists of Following 4 Parts: (Java Bean)</span></a></li></ol></li></ol>
+        </nav>
+    </aside>
+
+
+<article id="post-Class &amp; Objects"
+  class="post-article article-type-post fade" itemprop="blogPost">
+
+    <div class="post-card">
+        <h1 class="post-card-title">Class & Objects</h1>
+        <div class="post-meta">
+            <time class="post-time" title="2020-03-31 10:58:17" datetime="2020-03-31T02:58:17.667Z"  itemprop="datePublished">2020-03-31</time>
+
+            
+
+
+            
+<span id="busuanzi_container_page_pv" title="文章总阅读量" style='display:none'>
+    <i class="icon icon-eye icon-pr"></i><span id="busuanzi_value_page_pv"></span>
+</span>
+
+
+        </div>
+        <div class="post-content" id="post-content" itemprop="postContent">
+            <h2 id="Class-amp-Objects"><a href="#Class-amp-Objects" class="headerlink" title="Class &amp; Objects"></a>Class &amp; Objects</h2><h3 id="Class"><a href="#Class" class="headerlink" title="Class"></a>Class</h3><ul>
+<li>a set of related <code>attributes</code> &amp; <code>behavior</code></li>
+<li>like a template of a thing describeb by <code>attributes</code> &amp; <code>behavior</code></li>
+</ul>
+<h4 id="Attributes"><a href="#Attributes" class="headerlink" title="Attributes"></a>Attributes</h4><ul>
+<li>the statues of a thing</li>
+</ul>
+<h4 id="Behaviors"><a href="#Behaviors" class="headerlink" title="Behaviors"></a>Behaviors</h4><ul>
+<li>what this thing can do</li>
+</ul>
+<p>eg:</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">class: a cat</span><br><span class="line">attributes: name, weight, age, color</span><br><span class="line">behaviors: walk, run</span><br></pre></td></tr></table></figure>
+
+<img src="https://github.com/IceCoffee98/Java_Basic_Course/blob/master/img/image-20200328111204621.png" style="zoom:67%;" />
+
+<h3 id="Object"><a href="#Object" class="headerlink" title="Object"></a>Object</h3><p><code>Class</code> is the description of a type of thing, which is ==abstract==.</p>
+<p><code>Object</code> is an example of a type of thing, which is ==specific==.</p>
+<p><code>Class</code> is the templet of <code>Object</code>, <code>Object</code> is the entity of <code>Class</code></p>
+<h4 id="Attention"><a href="#Attention" class="headerlink" title="Attention"></a>Attention</h4><ul>
+<li>common method should include keyword: <code>static</code>, but in the method of a member, it is not allowed.</li>
+<li>member’s variables are defined outside of methods of the class </li>
+<li>different examples of the same class share the same starting address of behavior method</li>
+<li>the example of a class can be refered</li>
+<li>when an object is transmitted into a method, the actual transitted is the address of the object</li>
+<li>when the tpye of a variable is “boolean”, “Getter Function” should be written as “isXxx”.</li>
+<li>you can add Class with another Class in different package</li>
+<li>when a <strong>local variable</strong> and a <strong>member variable</strong> in the same Class have the same name in a method, the method will use the <strong>closet variable as priority</strong>. And you can use <strong><code>this.</code></strong> to represent member variables. <strong><code>this</code></strong> is called by the the particular object by Class.</li>
+</ul>
+<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br><span class="line">47</span><br><span class="line">48</span><br><span class="line">49</span><br><span class="line">50</span><br><span class="line">51</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">// Class Declaration  </span></span><br><span class="line"><span class="keyword">public</span> <span class="class"><span class="keyword">class</span> <span class="title">Dog</span> </span>&#123; </span><br><span class="line">    <span class="comment">// Instance Variables </span></span><br><span class="line">  	<span class="comment">// behaviors</span></span><br><span class="line">    String name; </span><br><span class="line">    String breed; </span><br><span class="line">    <span class="keyword">int</span> age; </span><br><span class="line">    String color; </span><br><span class="line">  </span><br><span class="line">    <span class="comment">// Constructor Declaration of Class </span></span><br><span class="line">    <span class="function"><span class="keyword">public</span> <span class="title">Dog</span><span class="params">(String name, String breed, <span class="keyword">int</span> age, String color)</span></span>&#123; </span><br><span class="line">        <span class="keyword">this</span>.name = name; </span><br><span class="line">        <span class="keyword">this</span>.breed = breed; </span><br><span class="line">        <span class="keyword">this</span>.age = age; </span><br><span class="line">        <span class="keyword">this</span>.color = color; </span><br><span class="line">    &#125; </span><br><span class="line">  	</span><br><span class="line">  	<span class="comment">// Attributes</span></span><br><span class="line">    <span class="comment">// method 1 </span></span><br><span class="line">    <span class="function"><span class="keyword">public</span> String <span class="title">getName</span><span class="params">()</span></span>&#123; </span><br><span class="line">        <span class="keyword">return</span> name; </span><br><span class="line">    &#125; </span><br><span class="line">  </span><br><span class="line">    <span class="comment">// method 2 </span></span><br><span class="line">    <span class="function"><span class="keyword">public</span> String <span class="title">getBreed</span><span class="params">()</span></span>&#123; </span><br><span class="line">        <span class="keyword">return</span> breed; </span><br><span class="line">    &#125; </span><br><span class="line">  </span><br><span class="line">    <span class="comment">// method 3 </span></span><br><span class="line">    <span class="function"><span class="keyword">public</span> <span class="keyword">int</span> <span class="title">getAge</span><span class="params">()</span></span>&#123; </span><br><span class="line">        <span class="keyword">return</span> age; </span><br><span class="line">    &#125; </span><br><span class="line">  </span><br><span class="line">    <span class="comment">// method 4 </span></span><br><span class="line">    <span class="function"><span class="keyword">public</span> String <span class="title">getColor</span><span class="params">()</span></span>&#123; </span><br><span class="line">        <span class="keyword">return</span> color; </span><br><span class="line">    &#125; </span><br><span class="line">  </span><br><span class="line">    <span class="meta">@Override</span></span><br><span class="line">    <span class="function"><span class="keyword">public</span> String <span class="title">toString</span><span class="params">()</span></span>&#123; </span><br><span class="line">        <span class="keyword">return</span>(<span class="string">"Hi my name is "</span>+ <span class="keyword">this</span>.getName()+ </span><br><span class="line">               <span class="string">".\nMy breed,age and color are "</span> + </span><br><span class="line">               <span class="keyword">this</span>.getBreed()+<span class="string">","</span> + <span class="keyword">this</span>.getAge()+ </span><br><span class="line">               <span class="string">","</span>+ <span class="keyword">this</span>.getColor()); </span><br><span class="line">    &#125; </span><br><span class="line">  </span><br><span class="line">    <span class="function"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">void</span> <span class="title">main</span><span class="params">(String[] args)</span></span>&#123; </span><br><span class="line">        Dog tuffy = <span class="keyword">new</span> Dog(<span class="string">"tuffy"</span>,<span class="string">"papillon"</span>, <span class="number">5</span>, <span class="string">"white"</span>); </span><br><span class="line">        System.out.println(tuffy.toString()); </span><br><span class="line">    &#125; </span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<h3 id="Construction-Method"><a href="#Construction-Method" class="headerlink" title="Construction Method"></a>Construction Method</h3><ul>
+<li>the name of a construction method should be completely the same as the Class, even the case.</li>
+<li>construction method don’t need <code>return</code> and <code>void</code></li>
+<li>if you don’t write a construction method manually, the complier will create one automatically. Once you write it, the complier won’t create another any more. But you can write more than one construction method with different argument list –  overload of construction.</li>
+</ul>
+<h3 id="A-Standard-Class-Consists-of-Following-4-Parts-Java-Bean"><a href="#A-Standard-Class-Consists-of-Following-4-Parts-Java-Bean" class="headerlink" title="A Standard Class Consists of Following 4 Parts: (Java Bean)"></a>A Standard Class Consists of Following 4 Parts: (Java Bean)</h3><ol>
+<li>all member variables are modified by <code>private</code></li>
+<li>all member variables need a pair of <code>Getter</code>&amp;<code>Setter</code></li>
+<li>a construction method without <code>arguments</code></li>
+<li>a construction method with full <code>arguments</code></li>
+</ol>
+
+        </div>
+
+        <blockquote class="post-copyright">
+    
+    <div class="content">
+        
+<span class="post-time">
+    Last updated: <time datetime="2020-03-31T03:03:41.303Z" itemprop="dateUpdated">2020-03-31 11:03:41</time>
+</span><br>
+
+
+        
+    </div>
+    
+    <footer>
+        <a href="http://yoursite.com">
+            <img src="/img/ksq.png" alt="Ice Coffee">
+            Ice Coffee
+        </a>
+    </footer>
+</blockquote>
+
+        
+<div class="page-reward">
+    <a id="rewardBtn" href="javascript:;" class="page-reward-btn waves-effect waves-circle waves-light">赏</a>
+</div>
+
+
+
+        <div class="post-footer">
+            
+
+            
+<div class="page-share-wrap">
+    
+
+<div class="page-share" id="pageShare">
+    <ul class="reset share-icons">
+      <li>
+        <a class="weibo share-sns" target="_blank" href="http://service.weibo.com/share/share.php?url=http://yoursite.com/2020/03/31/Class%20&%20Objects/&title=《Class & Objects》 — IceCoffee's Blog&pic=http://yoursite.com/img/ksq.png" data-title="微博">
+          <i class="icon icon-weibo"></i>
+        </a>
+      </li>
+      <li>
+        <a class="weixin share-sns wxFab" href="javascript:;" data-title="微信">
+          <i class="icon icon-weixin"></i>
+        </a>
+      </li>
+      <li>
+        <a class="qq share-sns" target="_blank" href="http://connect.qq.com/widget/shareqq/index.html?url=http://yoursite.com/2020/03/31/Class%20&%20Objects/&title=《Class & Objects》 — IceCoffee's Blog&source=" data-title=" QQ">
+          <i class="icon icon-qq"></i>
+        </a>
+      </li>
+      <li>
+        <a class="facebook share-sns" target="_blank" href="https://www.facebook.com/sharer/sharer.php?u=http://yoursite.com/2020/03/31/Class%20&%20Objects/" data-title=" Facebook">
+          <i class="icon icon-facebook"></i>
+        </a>
+      </li>
+      <li>
+        <a class="twitter share-sns" target="_blank" href="https://twitter.com/intent/tweet?text=《Class & Objects》 — IceCoffee's Blog&url=http://yoursite.com/2020/03/31/Class%20&%20Objects/&via=http://yoursite.com" data-title=" Twitter">
+          <i class="icon icon-twitter"></i>
+        </a>
+      </li>
+      <li>
+        <a class="google share-sns" target="_blank" href="https://plus.google.com/share?url=http://yoursite.com/2020/03/31/Class%20&%20Objects/" data-title=" Google+">
+          <i class="icon icon-google-plus"></i>
+        </a>
+      </li>
+    </ul>
+ </div>
+
+
+
+    <a href="javascript:;" id="shareFab" class="page-share-fab waves-effect waves-circle">
+        <i class="icon icon-share-alt icon-lg"></i>
+    </a>
+</div>
+
+
+
+        </div>
+    </div>
+
+    
+<nav class="post-nav flex-row flex-justify-between">
+  
+    <div class="waves-block waves-effect prev">
+      <a href="/2020/03/31/Method/" id="post-prev" class="post-nav-link">
+        <div class="tips"><i class="icon icon-angle-left icon-lg icon-pr"></i> Prev</div>
+        <h4 class="title">Method</h4>
+      </a>
+    </div>
+  
+
+  
+    <div class="waves-block waves-effect next">
+      <a href="/2020/03/31/README/" id="post-next" class="post-nav-link">
+        <div class="tips">Next <i class="icon icon-angle-right icon-lg icon-pl"></i></div>
+        <h4 class="title">README</h4>
+      </a>
+    </div>
+  
+</nav>
+
+
+
+    
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<section class="comments" id="comments">
+    <div id="gitalk-container"></div>
+    <link rel="stylesheet" href="https://unpkg.com/gitalk/dist/gitalk.css">
+    <script src="https://unpkg.com/gitalk/dist/gitalk.min.js"></script>
+    <script>
+        var id = location.pathname
+        if (location.pathname.length > 50) {
+          id = location.pathname.replace(/\/\d+\/\d+\/\d+\//, '').replace('/', '').substring(0, 50)
+        }
+        const gitalk = new Gitalk({
+          clientID: '',
+          clientSecret: '',
+          repo: '',
+          owner: '',
+          admin: [''],
+          id: id,      // Ensure uniqueness and length less than 50
+          title: document.title.split('|')[0],
+          distractionFreeMode: false  // Facebook-like distraction free mode
+        })
+
+        gitalk.render('gitalk-container')
+    </script>
+</section>
+
+
+
+
+</article>
+
+<div id="reward" class="page-modal reward-lay">
+    <a class="close" href="javascript:;"><i class="icon icon-close"></i></a>
+    <h3 class="reward-title">
+        <i class="icon icon-quote-left"></i>
+        
+        <i class="icon icon-quote-right"></i>
+    </h3>
+    <div class="reward-content">
+        
+        <div class="reward-code">
+            <img id="rewardCode" src="/false" alt="打赏二维码">
+        </div>
+        
+    </div>
+</div>
+
+
+
+</div>
+
+        <footer class="footer">
+    <div class="top">
+        
+<p>
+    <span id="busuanzi_container_site_uv" style='display:none'>
+        Total Visitors：<span id="busuanzi_value_site_uv"></span>
+    </span>
+    <span id="busuanzi_container_site_pv" style='display:none'>
+        Total Visited：<span id="busuanzi_value_site_pv"></span>
+    </span>
+</p>
+
+
+        <p>
+            
+            <span>This blog is licensed under a <a rel="license noopener" href="https://creativecommons.org/licenses/by/4.0/" target="_blank">Creative Commons Attribution 4.0 International License</a>.</span>
+        </p>
+    </div>
+    <div class="bottom">
+        <p><span>Ice Coffee &copy; 2015 - 2020</span>
+            <span>
+                
+                Power by <a href="http://hexo.io/" target="_blank">Hexo</a> Theme <a href="https://github.com/yscoder/hexo-theme-indigo" target="_blank">indigo</a>
+            </span>
+        </p>
+    </div>
+</footer>
+
+    </main>
+    <div class="mask" id="mask"></div>
+<a href="javascript:;" id="gotop" class="waves-effect waves-circle waves-light"><span class="icon icon-lg icon-chevron-up"></span></a>
+
+
+
+<div class="global-share" id="globalShare">
+    <ul class="reset share-icons">
+      <li>
+        <a class="weibo share-sns" target="_blank" href="http://service.weibo.com/share/share.php?url=http://yoursite.com/2020/03/31/Class%20&%20Objects/&title=《Class & Objects》 — IceCoffee's Blog&pic=http://yoursite.com/img/ksq.png" data-title="微博">
+          <i class="icon icon-weibo"></i>
+        </a>
+      </li>
+      <li>
+        <a class="weixin share-sns wxFab" href="javascript:;" data-title="微信">
+          <i class="icon icon-weixin"></i>
+        </a>
+      </li>
+      <li>
+        <a class="qq share-sns" target="_blank" href="http://connect.qq.com/widget/shareqq/index.html?url=http://yoursite.com/2020/03/31/Class%20&%20Objects/&title=《Class & Objects》 — IceCoffee's Blog&source=" data-title=" QQ">
+          <i class="icon icon-qq"></i>
+        </a>
+      </li>
+      <li>
+        <a class="facebook share-sns" target="_blank" href="https://www.facebook.com/sharer/sharer.php?u=http://yoursite.com/2020/03/31/Class%20&%20Objects/" data-title=" Facebook">
+          <i class="icon icon-facebook"></i>
+        </a>
+      </li>
+      <li>
+        <a class="twitter share-sns" target="_blank" href="https://twitter.com/intent/tweet?text=《Class & Objects》 — IceCoffee's Blog&url=http://yoursite.com/2020/03/31/Class%20&%20Objects/&via=http://yoursite.com" data-title=" Twitter">
+          <i class="icon icon-twitter"></i>
+        </a>
+      </li>
+      <li>
+        <a class="google share-sns" target="_blank" href="https://plus.google.com/share?url=http://yoursite.com/2020/03/31/Class%20&%20Objects/" data-title=" Google+">
+          <i class="icon icon-google-plus"></i>
+        </a>
+      </li>
+    </ul>
+ </div>
+
+
+<div class="page-modal wx-share" id="wxShare">
+    <a class="close" href="javascript:;"><i class="icon icon-close"></i></a>
+    <p>扫一扫，分享到微信</p>
+    <img src="//api.qrserver.com/v1/create-qr-code/?data=http://yoursite.com/2020/03/31/Class%20&%20Objects/" alt="微信分享二维码">
+</div>
+
+
+
+
+    <script src="//cdn.bootcss.com/node-waves/0.7.4/waves.min.js"></script>
+<script>
+var BLOG = { ROOT: '/', SHARE: true, REWARD: true };
+
+
+</script>
+
+<script src="//unpkg.com/hexo-theme-material-indigo@latest/js/main.min.js"></script>
+
+
+<div class="search-panel" id="search-panel">
+    <ul class="search-result" id="search-result"></ul>
+</div>
+<template id="search-tpl">
+<li class="item">
+    <a href="{path}" class="waves-block waves-effect">
+        <div class="title ellipsis" title="{title}">{title}</div>
+        <div class="flex-row flex-middle">
+            <div class="tags ellipsis">
+                {tags}
+            </div>
+            <time class="flex-col time">{date}</time>
+        </div>
+    </a>
+</li>
+</template>
+
+<script src="//unpkg.com/hexo-theme-material-indigo@latest/js/search.min.js" async></script>
+
+
+
+
+
+
+<script async src="//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script>
+
+
+
+<script>
+(function() {
+    var OriginTitile = document.title, titleTime;
+    document.addEventListener('visibilitychange', function() {
+        if (document.hidden) {
+            document.title = '死鬼去哪里了！';
+            clearTimeout(titleTime);
+        } else {
+            document.title = '(つェ⊂)咦!又好了!';
+            titleTime = setTimeout(function() {
+                document.title = OriginTitile;
+            },2000);
+        }
+    });
+})();
+</script>
+
+
+
+</body>
+</html>

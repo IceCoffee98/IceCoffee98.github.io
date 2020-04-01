@@ -1,0 +1,608 @@
+<!DOCTYPE html>
+<html>
+<head>
+    
+
+    
+
+    
+
+
+
+    <meta charset="utf-8">
+    
+    
+    
+    
+    <title>API | IceCoffee&#39;s Blog</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    
+    <meta name="theme-color" content="#3F51B5">
+    
+    
+    <meta name="keywords" content="">
+    <meta name="description" content="API Application Programming Interface  Java API is a dictionary for programmer, which tells us how to use them but you don’t have to know how to use it   Steps to use it package -&gt; the construction">
+<meta property="og:type" content="article">
+<meta property="og:title" content="API">
+<meta property="og:url" content="http://yoursite.com/2020/03/31/API/index.html">
+<meta property="og:site_name" content="IceCoffee&#39;s Blog">
+<meta property="og:description" content="API Application Programming Interface  Java API is a dictionary for programmer, which tells us how to use them but you don’t have to know how to use it   Steps to use it package -&gt; the construction">
+<meta property="og:locale" content="en_US">
+<meta property="article:published_time" content="2020-03-31T10:44:58.481Z">
+<meta property="article:modified_time" content="2020-04-01T01:43:48.663Z">
+<meta property="article:author" content="Ice Coffee">
+<meta name="twitter:card" content="summary">
+    
+    <link rel="shortcut icon" href="/favicon.ico">
+    <link rel="stylesheet" href="//unpkg.com/hexo-theme-material-indigo@latest/css/style.css">
+    <script>window.lazyScripts=[]</script>
+
+    <!-- custom head -->
+    
+
+<meta name="generator" content="Hexo 4.2.0"></head>
+
+<body>
+    <div id="loading" class="active"></div>
+
+    <aside id="menu" class="hide" >
+  <div class="inner flex-row-vertical">
+    <a href="javascript:;" class="header-icon waves-effect waves-circle waves-light" id="menu-off">
+        <i class="icon icon-lg icon-close"></i>
+    </a>
+    <div class="brand-wrap" style="background-image:url(/img/brand.jpg)">
+      <div class="brand">
+        <a href="/" class="avatar waves-effect waves-circle waves-light">
+          <img src="/img/ksq.png">
+        </a>
+        <hgroup class="introduce">
+          <h5 class="nickname">Ice Coffee</h5>
+          <a href="mailto:yixuanyu98@gmail.com" title="yixuanyu98@gmail.com" class="mail">yixuanyu98@gmail.com</a>
+        </hgroup>
+      </div>
+    </div>
+    <div class="scroll-wrap flex-col">
+      <ul class="nav">
+        
+            <li class="waves-block waves-effect">
+              <a href="/"  >
+                <i class="icon icon-lg icon-home"></i>
+                Home Page
+              </a>
+            </li>
+        
+            <li class="waves-block waves-effect">
+              <a href="/archives"  >
+                <i class="icon icon-lg icon-archives"></i>
+                Archives
+              </a>
+            </li>
+        
+            <li class="waves-block waves-effect">
+              <a href="/tags"  >
+                <i class="icon icon-lg icon-tags"></i>
+                Tags
+              </a>
+            </li>
+        
+            <li class="waves-block waves-effect">
+              <a href="/categories"  >
+                <i class="icon icon-lg icon-th-list"></i>
+                Categories
+              </a>
+            </li>
+        
+            <li class="waves-block waves-effect">
+              <a href="https://github.com/IceCoffee98" target="_blank" >
+                <i class="icon icon-lg icon-github"></i>
+                Github
+              </a>
+            </li>
+        
+            <li class="waves-block waves-effect">
+              <a href="https://weibo.com/u/2327972960?from=feed&loc=at&nick=-莫小言_" target="_blank" >
+                <i class="icon icon-lg icon-weibo"></i>
+                Weibo
+              </a>
+            </li>
+        
+      </ul>
+    </div>
+  </div>
+</aside>
+
+    <main id="main">
+        <header class="top-header" id="header">
+    <div class="flex-row">
+        <a href="javascript:;" class="header-icon waves-effect waves-circle waves-light on" id="menu-toggle">
+          <i class="icon icon-lg icon-navicon"></i>
+        </a>
+        <div class="flex-col header-title ellipsis">API</div>
+        
+        <div class="search-wrap" id="search-wrap">
+            <a href="javascript:;" class="header-icon waves-effect waves-circle waves-light" id="back">
+                <i class="icon icon-lg icon-chevron-left"></i>
+            </a>
+            <input type="text" id="key" class="search-input" autocomplete="off" placeholder="Search">
+            <a href="javascript:;" class="header-icon waves-effect waves-circle waves-light" id="search">
+                <i class="icon icon-lg icon-search"></i>
+            </a>
+        </div>
+        
+        
+        <a href="javascript:;" class="header-icon waves-effect waves-circle waves-light" id="menuShare">
+            <i class="icon icon-lg icon-share-alt"></i>
+        </a>
+        
+    </div>
+</header>
+<header class="content-header post-header">
+
+    <div class="container fade-scale">
+        <h1 class="title">API</h1>
+        <h5 class="subtitle">
+            
+                <time datetime="2020-03-31T10:44:58.481Z" itemprop="datePublished" class="page-time">
+  2020-03-31
+</time>
+
+
+            
+        </h5>
+    </div>
+
+    
+
+
+</header>
+
+
+<div class="container body-wrap">
+    
+    <aside class="post-widget">
+        <nav class="post-toc-wrap post-toc-shrink" id="post-toc">
+            <h4>TOC</h4>
+            <ol class="post-toc"><li class="post-toc-item post-toc-level-1"><a class="post-toc-link" href="#API"><span class="post-toc-number">1.</span> <span class="post-toc-text">API</span></a><ol class="post-toc-child"><li class="post-toc-item post-toc-level-4"><a class="post-toc-link" href="#Steps-to-use-it"><span class="post-toc-number">1.0.0.1.</span> <span class="post-toc-text">Steps to use it</span></a></li></ol></li></ol></li><li class="post-toc-item post-toc-level-2"><a class="post-toc-link" href="#Scanner"><span class="post-toc-number">1.1.</span> <span class="post-toc-text">Scanner</span></a></li><li class="post-toc-item post-toc-level-2"><a class="post-toc-link" href="#Random"><span class="post-toc-number">1.2.</span> <span class="post-toc-text">Random</span></a></li><li class="post-toc-item post-toc-level-2"><a class="post-toc-link" href="#ObjectArray"><span class="post-toc-number">1.3.</span> <span class="post-toc-text">ObjectArray</span></a></li><li class="post-toc-item post-toc-level-2"><a class="post-toc-link" href="#ArrayList-lt-E-gt"><span class="post-toc-number">1.4.</span> <span class="post-toc-text">ArrayList&lt;E&gt;</span></a><ol class="post-toc-child"><li class="post-toc-item post-toc-level-3"><a class="post-toc-link" href="#commonly-used-method"><span class="post-toc-number">1.4.1.</span> <span class="post-toc-text">commonly used method</span></a></li></ol></li></ol></li></ol>
+        </nav>
+    </aside>
+
+
+<article id="post-API"
+  class="post-article article-type-post fade" itemprop="blogPost">
+
+    <div class="post-card">
+        <h1 class="post-card-title">API</h1>
+        <div class="post-meta">
+            <time class="post-time" title="2020-03-31 18:44:58" datetime="2020-03-31T10:44:58.481Z"  itemprop="datePublished">2020-03-31</time>
+
+            
+
+
+            
+<span id="busuanzi_container_page_pv" title="文章总阅读量" style='display:none'>
+    <i class="icon icon-eye icon-pr"></i><span id="busuanzi_value_page_pv"></span>
+</span>
+
+
+        </div>
+        <div class="post-content" id="post-content" itemprop="postContent">
+            <h1 id="API"><a href="#API" class="headerlink" title="API"></a>API</h1><ul>
+<li><p>Application Programming Interface</p>
+</li>
+<li><p>Java API is a dictionary for programmer, which tells us how to use them but you don’t have to know how to use it</p>
+</li>
+</ul>
+<h4 id="Steps-to-use-it"><a href="#Steps-to-use-it" class="headerlink" title="Steps to use it"></a>Steps to use it</h4><ul>
+<li>package -&gt; the construction method -&gt; member method</li>
+<li>only when the API is in Java.Lang doesn’t it need to import</li>
+</ul>
+<h2 id="Scanner"><a href="#Scanner" class="headerlink" title="Scanner"></a>Scanner</h2><ul>
+<li>from <code>java.util.Scanner</code></li>
+</ul>
+<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">import</span> java.util.Scanner;</span><br><span class="line"></span><br><span class="line"><span class="keyword">public</span> <span class="class"><span class="keyword">class</span> <span class="title">PracticeScanner</span> </span>&#123;</span><br><span class="line">    <span class="function"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">void</span> <span class="title">main</span><span class="params">(String[] args)</span> </span>&#123;</span><br><span class="line">        Scanner sc = <span class="keyword">new</span> Scanner(System.in);</span><br><span class="line">        <span class="keyword">int</span> a = sc.nextInt();</span><br><span class="line">      	<span class="keyword">float</span> b = sc.nextFloat();</span><br><span class="line">        String str = sc.next();</span><br><span class="line">        System.out.println(a+str);</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<ul>
+<li>Actually, all variables import from outsides are in the format of “String”, but the member method could transform into other types, like <code>sc.nextInt()</code>, so the original function(this name may not be appropriate) is <code>sc.next()</code>. So when you want to input a “String” type, you should use <code>sc.next()</code> rather than <code>sc.nextString()</code>, which dosen’t existed at all.</li>
+<li><code>anonymous</code> object can be used, but it can used only for once, like the following examples.</li>
+</ul>
+<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">import</span> java.util.Scanner;</span><br><span class="line"></span><br><span class="line"><span class="comment">//illustrate that an object can be used anonymously</span></span><br><span class="line"><span class="keyword">public</span> <span class="class"><span class="keyword">class</span> <span class="title">AnonymousTest</span> </span>&#123;</span><br><span class="line">    <span class="function"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">void</span> <span class="title">main</span><span class="params">(String[] args)</span> </span>&#123;</span><br><span class="line">        methodParam(<span class="keyword">new</span> Scanner(System.in));</span><br><span class="line">        Scanner sc = practiceReturm();</span><br><span class="line">        System.out.println(<span class="string">"input another number: "</span>);</span><br><span class="line">        System.out.println(<span class="string">"the another imputed number is: "</span> + sc.nextInt());</span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line">  	<span class="comment">//use Scanner as an argument</span></span><br><span class="line">    <span class="function"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">void</span> <span class="title">methodParam</span><span class="params">(Scanner sc)</span></span>&#123;</span><br><span class="line">        System.out.println(<span class="string">"input a number: "</span>);</span><br><span class="line">        <span class="keyword">int</span> num = sc.nextInt();</span><br><span class="line">        System.out.println(<span class="string">"the inputed number is: "</span>+ num);</span><br><span class="line">    &#125;</span><br><span class="line">		</span><br><span class="line">  	<span class="comment">//use Scanner as a return</span></span><br><span class="line">    <span class="function"><span class="keyword">public</span> <span class="keyword">static</span> Scanner <span class="title">practiceReturm</span><span class="params">()</span></span>&#123;</span><br><span class="line">        <span class="keyword">return</span> <span class="keyword">new</span> Scanner(System.in);</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line">input a number:</span><br><span class="line">1</span><br><span class="line">the inputed number is: 1</span><br><span class="line">input another number: </span><br><span class="line">12</span><br><span class="line">the another imputed number is: 12</span><br></pre></td></tr></table></figure>
+
+
+
+<h2 id="Random"><a href="#Random" class="headerlink" title="Random"></a>Random</h2><ul>
+<li>a objection to generate random numbers</li>
+<li>the random numbers are in the range of the variable’s type but won’t exceed it.</li>
+</ul>
+<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">import</span> java.util.Random;</span><br><span class="line"><span class="keyword">public</span> <span class="class"><span class="keyword">class</span> <span class="title">TestRandom</span> </span>&#123;</span><br><span class="line">    <span class="function"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">void</span> <span class="title">main</span><span class="params">(String[] args)</span> </span>&#123;</span><br><span class="line">        Random r = <span class="keyword">new</span> Random();</span><br><span class="line">      	</span><br><span class="line">      	<span class="comment">//the random numbers are in the range of the </span></span><br><span class="line">      	<span class="comment">//variable's type but won't exceed it.</span></span><br><span class="line">        <span class="keyword">int</span> randon_num = r.nextInt();</span><br><span class="line">      	</span><br><span class="line">      	<span class="comment">//range:[0:10)</span></span><br><span class="line">      	<span class="keyword">int</span> randon_num_range = r.nextInt(<span class="number">10</span>);</span><br><span class="line">        System.out.println(randon_num);</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+
+
+<h2 id="ObjectArray"><a href="#ObjectArray" class="headerlink" title="ObjectArray"></a>ObjectArray</h2><ul>
+<li>when object array just created, the elements are ‘null’, which is different with crearting single object</li>
+</ul>
+<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">Person[] ps = <span class="keyword">new</span> Person[<span class="number">3</span>];</span><br><span class="line">System.out.println(ps[<span class="number">0</span>]);</span><br><span class="line"></span><br><span class="line">Person pps = <span class="keyword">new</span> Person();</span><br><span class="line">System.out.println(pps);</span><br></pre></td></tr></table></figure>
+
+<p>output:</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">null</span><br><span class="line">cn.edu.ustb.demo04.Person@61bbe9ba</span><br></pre></td></tr></table></figure>
+
+
+
+<h2 id="ArrayList-lt-E-gt"><a href="#ArrayList-lt-E-gt" class="headerlink" title="ArrayList&lt;E&gt;"></a>ArrayList&lt;E&gt;</h2><ul>
+<li><E> represents generics: when defining a function, api or class, you don’t need to specify the type of it. It will be specified when using it. It can only be <code>reference type</code> rather than <code>basic type</code>. (the former is in stack, the latter is in heap). ps: E is a set consisting of several addresses of the elements,  so basic types like int, char, short don’t fit in this model.<br>but you can use the package type of these basic types. The following is a table of comparison of basic types to reference types</li>
+</ul>
+<table>
+<thead>
+<tr>
+<th>Basic Type</th>
+<th>Package Type</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>boolean</td>
+<td>Boolean</td>
+</tr>
+<tr>
+<td>byte</td>
+<td>Byte</td>
+</tr>
+<tr>
+<td>short</td>
+<td>Short</td>
+</tr>
+<tr>
+<td>int</td>
+<td><strong>Integer</strong></td>
+</tr>
+<tr>
+<td>long</td>
+<td>Long</td>
+</tr>
+<tr>
+<td>char</td>
+<td>Character</td>
+</tr>
+<tr>
+<td>float</td>
+<td>Float</td>
+</tr>
+<tr>
+<td>double</td>
+<td>Double</td>
+</tr>
+</tbody></table>
+<p><a href="https://blog.csdn.net/qing_gee/article/details/101670051?depth_1-utm_source=distribute.pc_relevant.none-task&utm_source=distribute.pc_relevant.none-task" target="_blank" rel="noopener"><code>csdn explained</code></a>   <a href="https://zhuanlan.zhihu.com/p/28654272" target="_blank" rel="noopener"><code>zhihu explained</code></a></p>
+<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br></pre></td><td class="code"><pre><span class="line">Integer a = <span class="number">3</span>; <span class="comment">//autoboxing</span></span><br><span class="line">Integer b = <span class="number">3</span>;</span><br><span class="line">System.out.println(<span class="string">"a = "</span> + a);</span><br><span class="line">System.out.println(<span class="string">"b = "</span> + b);</span><br><span class="line">System.out.println(<span class="string">"a=b? "</span> + (a == b));</span><br><span class="line">System.out.println();</span><br><span class="line"></span><br><span class="line">Integer c = <span class="keyword">new</span> Integer(<span class="number">2</span>);</span><br><span class="line">Integer d = <span class="keyword">new</span> Integer(<span class="number">2</span>);</span><br><span class="line">System.out.println(<span class="string">"c = "</span> + c);</span><br><span class="line">System.out.println(<span class="string">"d = "</span> + d);</span><br><span class="line">System.out.println(<span class="string">"c=d? "</span> + (c == d));</span><br></pre></td></tr></table></figure>
+
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line">a &#x3D; 3</span><br><span class="line">b &#x3D; 3</span><br><span class="line">a&#x3D;b? true</span><br><span class="line"></span><br><span class="line">c &#x3D; 2</span><br><span class="line">d &#x3D; 2</span><br><span class="line">c&#x3D;d? false</span><br></pre></td></tr></table></figure>
+
+
+
+<ul>
+<li>as for arraylist, you won’t get the address of it but content.</li>
+</ul>
+<h3 id="commonly-used-method"><a href="#commonly-used-method" class="headerlink" title="commonly used method"></a>commonly used method</h3><ul>
+<li><code>public boolean add(E, e)</code></li>
+<li><code>public E get(int index)</code>: fetch the element from set, return the gotten element</li>
+<li><code>public E remove(int index)</code>: delete the element from set, return the deleted element</li>
+<li><code>public int size()</code></li>
+</ul>
+<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br><span class="line">47</span><br><span class="line">48</span><br><span class="line">49</span><br><span class="line">50</span><br><span class="line">51</span><br><span class="line">52</span><br><span class="line">53</span><br><span class="line">54</span><br><span class="line">55</span><br><span class="line">56</span><br><span class="line">57</span><br><span class="line">58</span><br><span class="line">59</span><br><span class="line">60</span><br><span class="line">61</span><br><span class="line">62</span><br><span class="line">63</span><br><span class="line">64</span><br><span class="line">65</span><br><span class="line">66</span><br><span class="line">67</span><br><span class="line">68</span><br><span class="line">69</span><br><span class="line">70</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">package</span> cn.edu.ustb.demo04;</span><br><span class="line"></span><br><span class="line"><span class="keyword">import</span> java.util.ArrayList;</span><br><span class="line"><span class="comment">/*</span></span><br><span class="line"><span class="comment">from jdk 1.5, the complier support auto-boxing &amp; auto-unboxing</span></span><br><span class="line"><span class="comment">autoboxing: auto: basic type ----&gt; package type</span></span><br><span class="line"><span class="comment">auto-unboxing: auto: package type ----&gt; basic type</span></span><br><span class="line"><span class="comment"> */</span></span><br><span class="line"></span><br><span class="line"><span class="keyword">public</span> <span class="class"><span class="keyword">class</span> <span class="title">ArrayObject</span> </span>&#123;</span><br><span class="line">    <span class="function"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">void</span> <span class="title">main</span><span class="params">(String[] args)</span> </span>&#123;</span><br><span class="line">        ArrayList&lt;String&gt; list = <span class="keyword">new</span> ArrayList&lt;&gt;();</span><br><span class="line">        System.out.println(list); <span class="comment">// []</span></span><br><span class="line"></span><br><span class="line">        <span class="comment">// add elements into sets: add</span></span><br><span class="line">        <span class="comment">// remember: adding element into a set will not always be succseeful</span></span><br><span class="line">        <span class="comment">// so you have to check whether it is successfully added, but in this</span></span><br><span class="line">        <span class="comment">// situation, adding into "ArrayList", It will always be successful</span></span><br><span class="line">        <span class="keyword">boolean</span> success = list.add(<span class="string">"Jesse"</span>);</span><br><span class="line">        System.out.println(list);<span class="comment">//[Jesse]</span></span><br><span class="line">        System.out.println(<span class="string">"add it successfully? "</span> + success);</span><br><span class="line">      	<span class="comment">//add it successfully? true</span></span><br><span class="line"></span><br><span class="line">        <span class="comment">//add element</span></span><br><span class="line">        list.add(<span class="string">"Tom"</span>);</span><br><span class="line">        list.add(<span class="string">"Henry"</span>);</span><br><span class="line">        System.out.println(list);<span class="comment">//[Jesse, Tom, Henry]</span></span><br><span class="line"></span><br><span class="line">        <span class="comment">//get element</span></span><br><span class="line">        String name2 = list.get(<span class="number">2</span>);</span><br><span class="line">        System.out.println(<span class="string">"the name of the third person is: "</span> + name2);</span><br><span class="line">      	<span class="comment">//the name of the third person is: Henry</span></span><br><span class="line"></span><br><span class="line">        <span class="comment">//delete element</span></span><br><span class="line">        String name3 = list.remove(<span class="number">1</span>);</span><br><span class="line">        System.out.println(<span class="string">"the name of the deleted person is: "</span> + name3);</span><br><span class="line">        System.out.println(list);</span><br><span class="line">      	<span class="comment">//the name of the deleted person is: Tom</span></span><br><span class="line">      	<span class="comment">//[Jesse, Henry]</span></span><br><span class="line"></span><br><span class="line">        <span class="comment">//show the number of elements</span></span><br><span class="line">        <span class="keyword">int</span> num = list.size();</span><br><span class="line">        System.out.println(<span class="string">"the number of elements is: "</span> + num);</span><br><span class="line">        System.out.println();</span><br><span class="line">    	  <span class="comment">//the number of elements is: 2</span></span><br><span class="line"></span><br><span class="line">        <span class="comment">//shortcut: list.fori</span></span><br><span class="line">        <span class="keyword">for</span> (<span class="keyword">int</span> i = <span class="number">0</span>; i &lt; list.size(); i++) &#123;</span><br><span class="line">            System.out.println(list.get(i));</span><br><span class="line">            System.out.println();</span><br><span class="line">        &#125;</span><br><span class="line">      	<span class="comment">//Jesse</span></span><br><span class="line">				<span class="comment">//Henry</span></span><br><span class="line"></span><br><span class="line">        <span class="comment">//int? integer?</span></span><br><span class="line">        ArrayList&lt;Integer&gt; intList = <span class="keyword">new</span> ArrayList&lt;&gt;();</span><br><span class="line">        intList.add(<span class="number">100</span>);</span><br><span class="line">        intList.add(<span class="number">200</span>);</span><br><span class="line">        intList.add(<span class="number">300</span>);</span><br><span class="line">        System.out.println(intList);</span><br><span class="line">        <span class="keyword">int</span> i1=intList.get(<span class="number">0</span>);</span><br><span class="line">        <span class="keyword">int</span> i2=intList.get(<span class="number">1</span>);</span><br><span class="line">        System.out.println(<span class="string">"first element of integer list:"</span>+i1);</span><br><span class="line">        System.out.println(<span class="string">"second element of integer list:"</span>+i2);</span><br><span class="line">     	 	<span class="comment">//[100, 200, 300]</span></span><br><span class="line">				<span class="comment">//first element of integer list:100</span></span><br><span class="line">				<span class="comment">//second element of integer list:200</span></span><br><span class="line"></span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+
+
+
+
+
+        </div>
+
+        <blockquote class="post-copyright">
+    
+    <div class="content">
+        
+<span class="post-time">
+    Last updated: <time datetime="2020-04-01T01:43:48.663Z" itemprop="dateUpdated">2020-04-01 09:43:48</time>
+</span><br>
+
+
+        
+    </div>
+    
+    <footer>
+        <a href="http://yoursite.com">
+            <img src="/img/ksq.png" alt="Ice Coffee">
+            Ice Coffee
+        </a>
+    </footer>
+</blockquote>
+
+        
+<div class="page-reward">
+    <a id="rewardBtn" href="javascript:;" class="page-reward-btn waves-effect waves-circle waves-light">赏</a>
+</div>
+
+
+
+        <div class="post-footer">
+            
+
+            
+<div class="page-share-wrap">
+    
+
+<div class="page-share" id="pageShare">
+    <ul class="reset share-icons">
+      <li>
+        <a class="weibo share-sns" target="_blank" href="http://service.weibo.com/share/share.php?url=http://yoursite.com/2020/03/31/API/&title=《API》 — IceCoffee's Blog&pic=http://yoursite.com/img/ksq.png" data-title="微博">
+          <i class="icon icon-weibo"></i>
+        </a>
+      </li>
+      <li>
+        <a class="weixin share-sns wxFab" href="javascript:;" data-title="微信">
+          <i class="icon icon-weixin"></i>
+        </a>
+      </li>
+      <li>
+        <a class="qq share-sns" target="_blank" href="http://connect.qq.com/widget/shareqq/index.html?url=http://yoursite.com/2020/03/31/API/&title=《API》 — IceCoffee's Blog&source=" data-title=" QQ">
+          <i class="icon icon-qq"></i>
+        </a>
+      </li>
+      <li>
+        <a class="facebook share-sns" target="_blank" href="https://www.facebook.com/sharer/sharer.php?u=http://yoursite.com/2020/03/31/API/" data-title=" Facebook">
+          <i class="icon icon-facebook"></i>
+        </a>
+      </li>
+      <li>
+        <a class="twitter share-sns" target="_blank" href="https://twitter.com/intent/tweet?text=《API》 — IceCoffee's Blog&url=http://yoursite.com/2020/03/31/API/&via=http://yoursite.com" data-title=" Twitter">
+          <i class="icon icon-twitter"></i>
+        </a>
+      </li>
+      <li>
+        <a class="google share-sns" target="_blank" href="https://plus.google.com/share?url=http://yoursite.com/2020/03/31/API/" data-title=" Google+">
+          <i class="icon icon-google-plus"></i>
+        </a>
+      </li>
+    </ul>
+ </div>
+
+
+
+    <a href="javascript:;" id="shareFab" class="page-share-fab waves-effect waves-circle">
+        <i class="icon icon-share-alt icon-lg"></i>
+    </a>
+</div>
+
+
+
+        </div>
+    </div>
+
+    
+<nav class="post-nav flex-row flex-justify-between">
+  
+    <div class="waves-block waves-effect prev">
+      <a href="/2020/04/01/String/" id="post-prev" class="post-nav-link">
+        <div class="tips"><i class="icon icon-angle-left icon-lg icon-pr"></i> Prev</div>
+        <h4 class="title">String</h4>
+      </a>
+    </div>
+  
+
+  
+    <div class="waves-block waves-effect next">
+      <a href="/2020/03/31/Array/" id="post-next" class="post-nav-link">
+        <div class="tips">Next <i class="icon icon-angle-right icon-lg icon-pl"></i></div>
+        <h4 class="title">Array</h4>
+      </a>
+    </div>
+  
+</nav>
+
+
+
+    
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<section class="comments" id="comments">
+    <div id="gitalk-container"></div>
+    <link rel="stylesheet" href="https://unpkg.com/gitalk/dist/gitalk.css">
+    <script src="https://unpkg.com/gitalk/dist/gitalk.min.js"></script>
+    <script>
+        var id = location.pathname
+        if (location.pathname.length > 50) {
+          id = location.pathname.replace(/\/\d+\/\d+\/\d+\//, '').replace('/', '').substring(0, 50)
+        }
+        const gitalk = new Gitalk({
+          clientID: '',
+          clientSecret: '',
+          repo: '',
+          owner: '',
+          admin: [''],
+          id: id,      // Ensure uniqueness and length less than 50
+          title: document.title.split('|')[0],
+          distractionFreeMode: false  // Facebook-like distraction free mode
+        })
+
+        gitalk.render('gitalk-container')
+    </script>
+</section>
+
+
+
+
+</article>
+
+<div id="reward" class="page-modal reward-lay">
+    <a class="close" href="javascript:;"><i class="icon icon-close"></i></a>
+    <h3 class="reward-title">
+        <i class="icon icon-quote-left"></i>
+        
+        <i class="icon icon-quote-right"></i>
+    </h3>
+    <div class="reward-content">
+        
+        <div class="reward-code">
+            <img id="rewardCode" src="/false" alt="打赏二维码">
+        </div>
+        
+    </div>
+</div>
+
+
+
+</div>
+
+        <footer class="footer">
+    <div class="top">
+        
+<p>
+    <span id="busuanzi_container_site_uv" style='display:none'>
+        Total Visitors：<span id="busuanzi_value_site_uv"></span>
+    </span>
+    <span id="busuanzi_container_site_pv" style='display:none'>
+        Total Visited：<span id="busuanzi_value_site_pv"></span>
+    </span>
+</p>
+
+
+        <p>
+            
+            <span>This blog is licensed under a <a rel="license noopener" href="https://creativecommons.org/licenses/by/4.0/" target="_blank">Creative Commons Attribution 4.0 International License</a>.</span>
+        </p>
+    </div>
+    <div class="bottom">
+        <p><span>Ice Coffee &copy; 2015 - 2020</span>
+            <span>
+                
+                Power by <a href="http://hexo.io/" target="_blank">Hexo</a> Theme <a href="https://github.com/yscoder/hexo-theme-indigo" target="_blank">indigo</a>
+            </span>
+        </p>
+    </div>
+</footer>
+
+    </main>
+    <div class="mask" id="mask"></div>
+<a href="javascript:;" id="gotop" class="waves-effect waves-circle waves-light"><span class="icon icon-lg icon-chevron-up"></span></a>
+
+
+
+<div class="global-share" id="globalShare">
+    <ul class="reset share-icons">
+      <li>
+        <a class="weibo share-sns" target="_blank" href="http://service.weibo.com/share/share.php?url=http://yoursite.com/2020/03/31/API/&title=《API》 — IceCoffee's Blog&pic=http://yoursite.com/img/ksq.png" data-title="微博">
+          <i class="icon icon-weibo"></i>
+        </a>
+      </li>
+      <li>
+        <a class="weixin share-sns wxFab" href="javascript:;" data-title="微信">
+          <i class="icon icon-weixin"></i>
+        </a>
+      </li>
+      <li>
+        <a class="qq share-sns" target="_blank" href="http://connect.qq.com/widget/shareqq/index.html?url=http://yoursite.com/2020/03/31/API/&title=《API》 — IceCoffee's Blog&source=" data-title=" QQ">
+          <i class="icon icon-qq"></i>
+        </a>
+      </li>
+      <li>
+        <a class="facebook share-sns" target="_blank" href="https://www.facebook.com/sharer/sharer.php?u=http://yoursite.com/2020/03/31/API/" data-title=" Facebook">
+          <i class="icon icon-facebook"></i>
+        </a>
+      </li>
+      <li>
+        <a class="twitter share-sns" target="_blank" href="https://twitter.com/intent/tweet?text=《API》 — IceCoffee's Blog&url=http://yoursite.com/2020/03/31/API/&via=http://yoursite.com" data-title=" Twitter">
+          <i class="icon icon-twitter"></i>
+        </a>
+      </li>
+      <li>
+        <a class="google share-sns" target="_blank" href="https://plus.google.com/share?url=http://yoursite.com/2020/03/31/API/" data-title=" Google+">
+          <i class="icon icon-google-plus"></i>
+        </a>
+      </li>
+    </ul>
+ </div>
+
+
+<div class="page-modal wx-share" id="wxShare">
+    <a class="close" href="javascript:;"><i class="icon icon-close"></i></a>
+    <p>扫一扫，分享到微信</p>
+    <img src="//api.qrserver.com/v1/create-qr-code/?data=http://yoursite.com/2020/03/31/API/" alt="微信分享二维码">
+</div>
+
+
+
+
+    <script src="//cdn.bootcss.com/node-waves/0.7.4/waves.min.js"></script>
+<script>
+var BLOG = { ROOT: '/', SHARE: true, REWARD: true };
+
+
+</script>
+
+<script src="//unpkg.com/hexo-theme-material-indigo@latest/js/main.min.js"></script>
+
+
+<div class="search-panel" id="search-panel">
+    <ul class="search-result" id="search-result"></ul>
+</div>
+<template id="search-tpl">
+<li class="item">
+    <a href="{path}" class="waves-block waves-effect">
+        <div class="title ellipsis" title="{title}">{title}</div>
+        <div class="flex-row flex-middle">
+            <div class="tags ellipsis">
+                {tags}
+            </div>
+            <time class="flex-col time">{date}</time>
+        </div>
+    </a>
+</li>
+</template>
+
+<script src="//unpkg.com/hexo-theme-material-indigo@latest/js/search.min.js" async></script>
+
+
+
+
+
+
+<script async src="//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script>
+
+
+
+<script>
+(function() {
+    var OriginTitile = document.title, titleTime;
+    document.addEventListener('visibilitychange', function() {
+        if (document.hidden) {
+            document.title = '死鬼去哪里了！';
+            clearTimeout(titleTime);
+        } else {
+            document.title = '(つェ⊂)咦!又好了!';
+            titleTime = setTimeout(function() {
+                document.title = OriginTitile;
+            },2000);
+        }
+    });
+})();
+</script>
+
+
+
+</body>
+</html>
